@@ -1,0 +1,14 @@
+Python fast web microframework based on closures dedicated for google app engine
+
+h2. Usage
+
+{% highlight python %}
+import fiber
+
+def controller(GET, POST):
+  @GET('/')
+  def index():
+    return 'Hello World!'
+
+fiber.start(controller)
+{% endhighlight %}
